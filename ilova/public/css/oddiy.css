@@ -1,0 +1,246 @@
+@font-face {
+    font-family: Rubik;
+    font-weight: 400;
+    src: url('/shriftlar/rubik-latin-regular.woff2');
+}
+@font-face {
+    font-family: Rubik;
+    font-weight: 300;
+    src: url('/shriftlar/rubik-latin-300.woff2');
+}
+@font-face {
+    font-family: Rubik;
+    font-weight: 500;
+    src: url('/shriftlar/rubik-latin-500.woff2');
+}
+@font-face {
+    font-family: Rubik;
+    font-weight: 600;
+    src: url('/shriftlar/rubik-latin-600.woff2');
+}
+@font-face {
+    font-family: Rubik;
+    font-weight: 700;
+    src: url('/shriftlar/rubik-latin-700.woff2');
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 400;
+    src: url(/shriftlar/poppins-v15-latin-regular.woff2);
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 300;
+    src: url(/shriftlar/poppins-v15-latin-300.woff2), url(/shriftlar/poppins-v15-latin-300italic.woff2);
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 500;
+    src: url(/shriftlar/poppins-v15-latin-500.woff2), url(/shriftlar/poppins-v15-latin-500.woff2);
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* ::-webkit-scrollbar {
+    width: 0;
+} */
+
+/* Tepasi */
+.header {
+    font-family: Rubik;
+}
+
+.belgi-ussd {
+    display: block;
+    width: 130px;
+    height: 40px;
+    background-image: url('/rasmlar/belgi.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-nav {
+    margin-right: 3rem;
+}
+
+.navbar-toggler {
+    padding: 0 5px;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 7px 0;
+    background-color: rgb(51, 204, 204);
+    transition: .3s;
+}
+
+.nav-item a {
+    font-size: 18px;
+}
+
+.nav-item a i {
+    font-size: 25px;
+}
+
+.nav-item.dropdown {
+    padding-top: 2px;
+}
+
+.ussd-kodlar::before {
+    display: block;
+    position: relative;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url('/rasmlar/ussd.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.qoshish {
+    font-weight: 500;
+}
+
+@media (max-width: 990px) {
+    .navbar-nav li a {
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        margin-right: 0;
+    }
+
+    .navbar-collapse {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        text-align: center;
+    }
+}
+
+
+/* Sahifa pasti */
+footer .ijtimoiy i {
+    font-size: 22px;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    color: #f7f7f7;
+    background-color: #1b1f23;
+    transition: background-color 0.3s ease;
+}
+
+/* Sahifa pasti */
+footer {
+    margin-top: calc(100vh - 10%)px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+footer::before {
+    right: 20px;
+    left: 20px;
+    content: '';
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    top: 0;
+    height: 5px;
+    background: linear-gradient(to right, #0976a1 0%, #0976a1 50%, #ffd374 50%, #ffd374 100%);
+    /* background: linear-gradient(to right, #0976a1 0%, #0976a1 250px, #ffd374 250px, #ffd374 100%); */
+}
+
+footer .ijtimoiy i {
+    font-size: 22px;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    color: #f7f7f7;
+    background-color: #0072bc;
+    transition: background-color 0.3s ease;
+}
+
+footer .ijtimoiy i:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.yaratuvchi {
+    display: flex;
+}
+
+@media (max-width: 770px) {
+    .yaratuvchi {
+        display: block;
+    }
+
+    .yaratuvchi .huquq {
+        text-align: center;
+    }
+
+    .yaratuvchi .ijtimoiy {
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    footer .row {
+        justify-content: center;
+    }
+
+    footer .row {
+        text-align: center;
+    }
+}
+
+/* Qiymatlar */
+.fs-10 {
+    padding: 10px;
+}
+
+.pl-100 {
+    padding-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pr-100 {
+    padding-right: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+pt-75 {
+    padding-top: 75px;
+}
+
+.input-group-text {
+    background-color: transparent;
+}
+
+.fs-24 {
+    transform: scale(1.4);
+}
+
+@media (min-width: 990px) {
+    .header .fs-24 {
+        transform: scale(1);
+    }
+}

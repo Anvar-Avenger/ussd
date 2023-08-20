@@ -1,0 +1,253 @@
+/* Bosh qism */
+.bolak-1 .ichi {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+.rasmli-1 {
+    position: absolute;
+    right: -20%;
+    top: -20%;
+    transform: scale(0.8);
+    animation: kadr12 0.2s ease forwards;
+}
+
+@keyframes kadr12{
+    100% {
+        right: 0;
+    }
+}
+
+.animatsiya-1 {
+    display: flex;
+    width: 160px;
+}
+
+.animatsiya-1 h1 {
+    color: #ffffff;
+    font-size: 80px;
+    font-family: Rubik;
+    line-height: 1.1;
+    font-weight: 300;
+    margin-top: 50%;
+    animation: kadr1 1s ease 0.5s;
+}
+
+@keyframes kadr1 {
+    0% {
+        transform: translateY(40%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.animatsiya-1-sirt {
+    position: absolute;
+    width: 100%;
+    height: 345px;
+    top: 0;
+    left: -150%;
+    background-color: #3b424f;
+    border: none;
+    z-index: -1;
+    animation: kard11 1s ease 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes kard11 {
+    from {
+        left: -150%;
+    }
+
+    to {
+        left: -60%;
+    }
+}
+
+.bolak-2 {
+    padding: 90px 0;
+    background-color: #f7f7f7;
+}
+
+.bolak-2 img {
+    width: 170%;
+}
+
+.bolak-2 h2 {
+    font-size: 60px;
+}
+
+.bolak-2 .malumot {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* TYMX sahifasi */
+.tymx .sarlavha h2 {
+    color: #141414;
+    font-size: 60px;
+    font-family: Rubik;
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+.tymx .qoshuv {
+    transform: translateY(-40%) rotate(-15deg);
+}
+
+.tymx .aloqa {
+    padding-top: 45px;
+    padding-bottom: 90px;
+    background-color: #f7f7f7;
+}
+
+.aloqa .ustun {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ustun .ustun-ichi {
+    width: 30%;
+    text-align: center;
+    margin: 15px 5px;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    transform: translateY(10%);
+    opacity: 0;
+    cursor: pointer;
+    animation: pastdan 0.5s ease 0.2s forwards;
+}
+
+@keyframes pastdan {
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.ustun .ustun-ichi img {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 90%;
+}
+
+@media (max-width: 1200px) {
+    .rasmli-1 {
+        left: 40%;
+    }
+}
+
+@media (max-width: 990px) {
+    .rasmli-1 {
+        position: relative;
+        margin-top: 100px;
+        left: 0;
+    }
+
+    .animatsiya-1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .animatsiya-1-sirt {
+        width: 150%;
+    }
+
+    .bolak-1 .ichi {
+        padding-bottom: 0;
+    }
+
+    .pr-100 {
+        display: none;
+    }
+
+    .pl-100 {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .ustun .ustun-ichi {
+        width: 45%;
+    }
+
+    .ustun-ichi:last-child {
+        width: 100%;
+    }
+
+    .rasmli-1 {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 770px) {
+    .animatsiya-1 {
+        margin-left: 0px;
+    }
+
+    .animatsiya-1-sirt {
+        width: 160%;
+    }
+
+    .rasmli-1 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 570px) {
+    .aloqa .ustun {
+        justify-content: center;
+    }
+
+    .aloqa .sarlavha {
+        width: 80%;
+    }
+
+    .ustun .ustun-ichi {
+        width: 90%;
+    }
+
+    .sar-xizmat {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 430px) {
+    .tymx .sarlavha h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 430px) {
+    .sarlavha img {
+        display: none;
+    }
+}
+
+/* Royxat */
+.toplam {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toplam span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.olish {
+    text-transform: uppercase;
+}
+
+/* Tizimga kirish */
+.tizim-shakl {
+    width: 50%;
+}

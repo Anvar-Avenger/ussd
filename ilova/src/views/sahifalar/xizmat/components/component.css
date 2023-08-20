@@ -1,0 +1,164 @@
+.ich {
+    width: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Qidirish */
+.search-box {
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 950px) {
+    .search-box {
+        max-width: 100%;
+    }
+}
+
+.search-box form {
+    position: relative;
+    width: 100%;
+}
+
+input[type="search"] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    border-radius: 4px;
+    color: #000000;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #ededed, inset 1px 1px 3px 0 rgb(0 0 0 / 6%);
+    font-size: 16px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0 60px 0 20px;
+    border-radius: 20px;
+    background-color: #f6f5f5;
+    box-shadow: none;
+    border: 1px solid #333333;
+}
+
+.search-box button {
+    position: absolute;
+    width: 40px;
+    right: 10px;
+    top: 10px;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    color: #000000;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.yosh {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px 0;
+    padding: 10px 30px 10px 15px;
+    border-radius: 50px;
+    justify-content: space-between;
+    animation: yondan 0.2s linear;
+}
+
+@keyframes yondan {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.yosh:nth-child(2n+1) {
+    background-color: #228bd6;
+    color: #f7f7f7;
+}
+
+.yosh:nth-child(2n) {
+    background-color: #fdd27d;
+    color: #333333;
+}
+.yosh:nth-child(2n) span {
+    color: #333333;
+}
+
+.yosh-play-icon, .yosh-clip-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3px;
+    background-color: #00ccb2;
+    color: #fff;
+    margin-right: 10px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
+}
+
+.fx-1 {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    min-width: 50px;
+}
+
+.yosh-load-icon {
+    margin-left: 10px;
+    color: #ccc;
+    font-size: 18px;
+}
+
+.nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.yosh-title {
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.yaratuvchi {
+    display: flex;
+}
+
+@media (max-width: 770px) {
+    .yaratuvchi {
+        display: block;
+    }
+
+    .yaratuvchi .huquq {
+        text-align: center;
+    }
+
+    .yaratuvchi .ijtimoiy {
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    footer .row {
+        justify-content: center;
+    }
+
+    footer .row {
+        text-align: center;
+    }
+}

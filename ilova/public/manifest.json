@@ -1,0 +1,9 @@
+{
+  "icons": [
+    {
+      "src": "/rasmlar/belgi-kichik.png",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "."
+}
