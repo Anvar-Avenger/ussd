@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/venv
+
+# testing
+
+# production
+
+# misc
+.DS_Store
+
+# Byte complied
+__pycache__/
+
+# editor vs idea
+.vscode
+.idea
+
+# extra
+
+#environment
+.env
