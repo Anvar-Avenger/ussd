@@ -12,4 +12,5 @@
 ### Links
 - [Template](https://wsoft.ru/ussd)
 - [Scope CSS](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet)
+- [Cors](https://stackoverflow.com/questions/51017702/enable-cors-in-fetch-api) Browser have cross domain security at client side
 - [React Router](https://reactrouter.com/en/6.15.0/start/overview)

@@ -13,12 +13,16 @@ export default function Xizmat() {
     ];
 
     function selectCompany(komp) {
-        post('/trafik-olish', { company: komp, term: 30 }, function (data) {
-            setNatija(data);
+        post('/trafik-olish', { company: komp, term: 30 }, function (response, err) {
+            if (err) {
+                setNatija([]);
+            } else {
+                setNatija(response.data);
+            }
         });
     }
 
-    const Render = () => <InternetPackage dataset={natija} />
+    const Render = () => (<InternetPackage dataset={natija} />)
 
     return (
         <div className="mt-5 tymx">
@@ -27,6 +31,7 @@ export default function Xizmat() {
                     <div className="col-12 col-md-8 col-lg-6">
                         <h2 className="mb-2">Yordamchi kodlar</h2>
                         <p>Tuzilmalashtirilmagan yordamchi ma&#8217;lumotlar xizmati (USSD)</p>
+                        <p>Tarkibsiz yordamchi xizmat ma&#8217;lumoti (USSD)</p>
                     </div>
                     <div className="col-12 col-sm-10 col-md-4 col-lg-auto mx-auto mr-lg-0">
                         <form className="">
