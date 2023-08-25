@@ -12,6 +12,7 @@
 
 # Byte complied
 __pycache__/
+**/__pycache__
 
 # editor vs idea
 .vscode

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{Title}}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #f5f5f5;
+            margin-top: 8%;
+            color: #5d5d5d;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+            text-align: center
+        }
+
+        h1 {
+            font-size: 2.45em;
+            font-weight: 700;
+            color: #5d5d5d;
+            letter-spacing: -0.02em;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .container {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+        }
+
+        .description-text {
+            color: #707070;
+            letter-spacing: -0.01em;
+            font-size: 1.25em;
+            line-height: 20px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.7em;
+        }
+
+        .delay-1s {
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .quti {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 50px;
+            justify-content: center;
+            transform: scale(1.5);
+        }
+
+        .quti .jild {
+            top: -15px;
+        }
+
+        .yuklovchi {
+            position: absolute;
+            width: 1px;
+            height: 25px;
+            /*background-color: #ff0000;*/
+            opacity: 0;
+            animation: aylanish 3.5s linear infinite;
+        }
+
+        @keyframes aylanish {
+            0% {
+                opacity: 1;
+            }
+
+            30% {
+                transform: rotate(220deg);
+            }
+
+            40% {
+                transform: rotate(450deg);
+                opacity: 1;
+            }
+
+            75% {
+                transform: rotate(720deg);
+                opacity: 1;
+            }
+
+            76% {
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotate(0deg);
+                opacity: 0;
+            }
+        }
+
+        .yuklovchi:nth-child(1) {
+            animation-delay: 0.15s;
+        }
+
+        .yuklovchi:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .yuklovchi:nth-child(3) {
+            animation-delay: 0.45s;
+        }
+
+        .yuklovchi:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        .yuklovchi:nth-child(5) {
+            animation-delay: 0.75s;
+        }
+
+        .yuklovchi:nth-child(6) {
+            animation-delay: 0.9s;
+        }
+
+        .yuklovchi .nuqta {
+            position: relative;
+            top: 30px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="quti">
+                    <div class="jild">
+                        <div class="yuklovchi">
+                            <div class="nuqta"></div>
+                        </div>
+                        <div class="yuklovchi">
+                            <div class="nuqta"></div>
+                        </div>
+                        <div class="yuklovchi">
+                            <div class="nuqta"></div>
+                        </div>
+                        <div class="yuklovchi">
+                            <div class="nuqta"></div>
+                        </div>
+                        <div class="yuklovchi">
+                            <div class="nuqta"></div>
+                        </div>
+                        <div class="yuklovchi">
+                            <div class="nuqta"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="animated fadeIn">Biz buning ustida ishlayapmiz!</h1>
+                <div class="description-text animated fadeIn delay-1s">
+                    <div class="matn">
+                        <p>Ish jarayonlari davom etmoqda!</p>
+                    </div>
+                    <section class="footer">
+                        <strong>Bosh domen: </strong>
+                        <a href="https://joriy.uz">joriy.uz</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

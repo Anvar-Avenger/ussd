@@ -11,4 +11,5 @@
 
 ### Links
 - [Template](https://wsoft.ru/ussd)
-- https://create-react-app.dev/docs/adding-a-css-modules-stylesheet
+- [Scope CSS](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet)
+- [React Router](https://reactrouter.com/en/6.15.0/start/overview)

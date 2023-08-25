@@ -1,15 +1,33 @@
 package main
 
-func main() {
-	print(123)
+import (
+	"joriy/tajriba/config"
+	"joriy/tajriba/database"
+	"joriy/tajriba/routes"
+
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/gofiber/template/jet/v2"
+)
+
+func setup() *fiber.App {
+	engine := jet.New("./views", ".jet")
+	app := fiber.New(fiber.Config{
+		Views: engine,
+	})
+
+	app.Static("/", "./public")
+	app.Use(cors.New())
+
+	routes.Router(app)
+
+	return app
 }
 
-// @ilova.route('/trafik-olish', methods=['POST'])
-// def get_traffic():
-//     try:
-//         natija = traffic_repo.get_by_company(request.json['company'])
-//         return jsonify(natija)
-//     except KeyError as e:
-//         return fail(e.args, 'Ma\u2019lumotlar to\u2018liq daqdim etilmagan!')
-//     except UnsupportedMediaType as e:
-//         return fail([], e.name)
+func main() {
+	database.Connect()
+	app := setup()
+
+	app.Listen(":" + config.Getenv("APP_PORT"))
+	println("Server run: 3000")
+}
