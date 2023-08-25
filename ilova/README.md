@@ -11,4 +11,5 @@
 
 ### Links
 - [Template](https://wsoft.ru/ussd)
+- [Cors](https://stackoverflow.com/questions/51017702/enable-cors-in-fetch-api) Browser have cross domain security at client side
 - https://create-react-app.dev/docs/adding-a-css-modules-stylesheet
