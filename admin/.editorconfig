@@ -1,0 +1,30 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = false
+max_line_length = 120
+tab_width = 4
+
+ij_continuation_indent_size = 8
+ij_formatter_off_tag = @formatter:off
+ij_formatter_on_tag = @formatter:on
+ij_formatter_tags_enabled = false
+ij_smart_tabs = false
+ij_visual_guides = none
+ij_wrap_on_typing = false
+
+[.editorconfig]
+ij_editorconfig_space_after_comma = false
+
+
+[{*.htm,*.html}]
+ij_html_add_new_line_before_tags = body,div,p,form,h1,h2,h3
+ij_html_do_not_indent_children_of_tags = html,thead,tbody,tfoot
+ij_html_enforce_quotes = false
+
+[{*.toml,Cargo.lock,Cargo.toml.orig,Gopkg.lock,Pipfile,poetry.lock}]
+ij_toml_keep_indents_on_empty_lines = false
