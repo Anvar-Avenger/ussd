@@ -1,8 +1,6 @@
 package models
 
-import (
-	"time"
-)
+import "time"
 
 type InternetPackage struct {
 	ID        uint      `json:"id"`

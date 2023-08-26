@@ -1,10 +1,13 @@
 package models
 
-import "gorm.io/gorm"
+import "time"
 
 type Company struct {
-	gorm.Model
-	Name       string `json:"name"`
-	CallCenter string `json:"call_center"`
-	Prefix     string `json:"prefix"`
+	// gorm.Model
+	ID         uint      `gorm:"primarykey" json:"id"`
+	Name       string    `json:"name"`
+	CallCenter string    `json:"call_center"`
+	Prefix     string    `json:"prefix"`
+	CreatedAt  time.Time `json:"created_at"`
+	UpdatedAt  time.Time `json:"updated_at"`
 }

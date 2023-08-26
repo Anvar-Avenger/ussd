@@ -1,17 +1,17 @@
 # USSD server
 
 ## Commands
-``go get <package>`` - install package
-``go get package@none`` - uninstall package
-``go mod download`` - Downloads all of the modules in the dependency graph
-``go mod tidy`` - Walks the package graph in order to ensure that all imports are satisfied
+* ``go get <package>`` - install package
+* ``go get package@none`` - uninstall package
+* ``go mod download`` - Downloads all of the modules in the dependency graph
+* ``go mod tidy`` - Walks the package graph in order to ensure that all imports are satisfied
 
 
 ## References
 - [Go](https://go.dev/learn/) Build simple, secure, scalable systems with Go
 - [Fiber](https://docs.gofiber.io/) An Express-inspired web framework written in Go.
 - [GORM](https://gorm.io/docs/) The fantastic ORM library for Golang
-- [GoDotEnv]https://github.com/joho/godotenv) A Go (golang) port of the Ruby dotenv project (which loads env vars from a .env file).
+- [GoDotEnv](https://github.com/joho/godotenv) A Go (golang) port of the Ruby dotenv project (which loads env vars from a .env file).
 - [Toptal](https://www.toptal.com/developers/gitignore) gitignore generator
 
 ### Links

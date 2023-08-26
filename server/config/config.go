@@ -21,6 +21,7 @@ func LoadEnv(paths ...string) error {
 
 	if err != nil {
 		fmt.Print("Error loading .env file")
+		panic(err)
 	} else {
 		isLoadEnv = true
 	}

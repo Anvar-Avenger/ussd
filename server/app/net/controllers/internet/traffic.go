@@ -64,7 +64,7 @@ func Store(c *fiber.Ctx) error {
 		})
 	}
 
-	// Return the created user
+	// Return the created entity
 	return c.Status(201).JSON(fiber.Map{
 		"status":  "success",
 		"data":    entity,
