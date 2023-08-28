@@ -5,10 +5,10 @@ from flask_cors import CORS
 from werkzeug.exceptions import UnsupportedMediaType
 
 from app.net.response import success, fail
-from app.repositories import TrafficRepository, CredentialRepository, UserRepository
-from config import APP_STATIC_FILES, APP_TEMPLATE
+from app.repositories import CredentialRepository, UserRepository
+from config import APP_STATIC_FILES, APP_TEMPLATES
 
-ilova = Flask(__name__, "/", static_folder=APP_STATIC_FILES, template_folder=APP_TEMPLATE)
+ilova = Flask(__name__, "/", static_folder=APP_STATIC_FILES, template_folder=APP_TEMPLATES)
 CORS(ilova)
 
 user_repo = UserRepository()
@@ -53,26 +53,26 @@ def user_create():
         return fail(e.args)
 
 
-@ilova.get('/users/<int:nd>')
-def user_get(nd):
-    user = user_repo.get(nd)
+@ilova.get('/users/<int:idx>')
+def user_get(idx):
+    user = user_repo.get(idx)
     if user:
         return success(user)
     else:
         return fail([])
 
 
-@ilova.put('/users/<int:nd>')
-def user_update(nd):
+@ilova.put('/users/<int:idx>')
+def user_update(idx):
     try:
-        return success(user_repo.update(nd, request.json))
+        return success(user_repo.update(idx, request.json))
     except UnsupportedMediaType:
         return fail([])
 
 
-@ilova.delete('/users/<int:nd>')
-def user_delete(nd):
-    user_repo.delete(nd)
+@ilova.delete('/users/<int:idx>')
+def user_delete(idx):
+    user_repo.delete(idx)
     return success(None)
 
 

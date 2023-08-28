@@ -4,3 +4,6 @@ flask-cors=4.0.0
 # pip install -U flask-cors
 python-dotenv==1.0.0
 werkzeug~=2.3.7
+
+orator~=0.9.9
+pymysql==1.1.0

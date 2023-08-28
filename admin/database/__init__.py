@@ -1,9 +1,11 @@
 from typing import Optional
 
-from mysql.connector import connect, MySQLConnection
+from mysql import connector
+from mysql.connector import MySQLConnection
 from mysql.connector.cursor import MySQLCursor
+from orator import DatabaseManager, Model
 
-from config import DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME
+from config import DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME, dbconfig
 
 
 class Ulagich:
@@ -15,7 +17,7 @@ class Ulagich:
         self.ulanish = None
 
     def ulash(self) -> None:
-        self.ulanish = connect(
+        self.ulanish = connector.connect(
             host=DB_HOST,
             user=DB_USERNAME,
             password=DB_PASSWORD,
@@ -25,3 +27,9 @@ class Ulagich:
 
     def uzish(self):
         self.ulanish.disconnect()
+
+
+def connect():
+    db = DatabaseManager(dbconfig())
+    Model.set_connection_resolver(db)
+    return db

@@ -2,7 +2,9 @@
 USSD xizlatlari
 
 ## Python
-python file necha marta chaqirilsa shuncha marta yaratiladi
+> python file necha marta chaqirilsa shuncha marta yaratiladi
+> 
+> ``-U, --upgrade`` - Upgrade all packages to the newest available version
 
 ## O&#8216;rnatish
 Virtual muhit (venv)
@@ -38,10 +40,12 @@ Ma&#8217;lumotlar bazasi ``reserve-1.sql``
 
 
 ## References
-- [Python](https://docs.python.org/3/) Python is a programming language that lets you work quickly and integrate systems more effectively.
-- [Flask](https://flask.palletsprojects.com/en/2.3.x/) Flask depends on the Werkzeug WSGI toolkit, the Jinja template engine, and the Click CLI toolkit.
-- [MySQL](https://www.mysql.com/) MySQL is an open-source relational database management system (RDBMS)
-- [Cors]() Cross
+- [Python](https://docs.python.org/3/) The Python is a programming language that lets you work quickly and integrate systems more effectively.
+- [Flask](https://flask.palletsprojects.com/en/2.3.x/) The Flask depends on the Werkzeug WSGI toolkit, the Jinja template engine, and the Click CLI toolkit.
+- [MySQL](https://www.mysql.com/) The MySQL is an open-source relational database management system (RDBMS)
+- [Orator](https://orator-orm.com/) The Orator ORM provides a simple yet beautiful ActiveRecord implementation.
+- [PyMysql](https://pymysql.readthedocs.io/en/latest/) This package contains a pure-Python MySQL client library, based on PEP 249.
+- [Cors](https://flask-cors.readthedocs.io/en/latest/) A Flask extension for handling Cross Origin Resource Sharing (CORS), making cross-origin AJAX possible.
 - [Toml](https://toml.io/en/) A config file format for humans.
 
 ### Links

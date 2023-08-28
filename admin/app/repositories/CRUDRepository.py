@@ -8,11 +8,11 @@ class CRUDRepository:
     def create(self, form: dict) -> Union[dict, tuple]:
         ...
 
-    def get(self, nd: int) -> Optional[Union[dict, tuple]]:
+    def get(self, idx: int) -> Optional[Union[dict, tuple]]:
         ...
 
-    def update(self, nd: int, form: dict) -> Union[dict, tuple]:
+    def update(self, idx: int, form: dict) -> Union[dict, tuple]:
         ...
 
-    def delete(self, nd: int) -> Optional[Union[dict, tuple]]:
+    def delete(self, idx: int) -> Optional[Union[dict, tuple]]:
         ...
